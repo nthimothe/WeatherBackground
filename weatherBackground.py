@@ -133,7 +133,11 @@ def setBackground(keywords):
 
 def help():
     return """
-If you're having any trouble, make sure to authorize the whereami command-line tool. Also, if you've added any images to any directories, make sure that they're either .png, .jpg, .jpeg, or .tiff.
+If you're having any trouble, make sure to authorize the whereami command-line tool. 
+
+Also, if you've added any images to any directories, make sure that they're either .png, .jpg, .jpeg, or .tiff.
+
+Make sure to have your API credentials set in credentials.py, or the program will stall when trying to get location. 
 
 Run the program as follows:
       python3 weatherBackground.py
