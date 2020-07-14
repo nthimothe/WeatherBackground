@@ -25,6 +25,7 @@ if [ -a "whereami-1.1.0.zip" ]; then
     sleep 1
     mv whereami /usr/local/bin/whereami
     sleep 2
+    echo "Successfully added whereami program..."
 fi
 
 # create the bash script to run if run.sh doesn't exist
@@ -36,6 +37,9 @@ if [ ! -f run.sh ]; then
     echo "python3 weatherBackground.py" >> run.sh
     echo "cd \$curr" >> run.sh
     chmod 744 run.sh
+    echo "Successfully wrote run.sh..."
+else 
+    echo "run.sh already exists..."
 fi 
 
 
@@ -48,4 +52,7 @@ if [ ! -f $CRON_FILE ]; then
     add_path
     echo "$line" >> $CRON_FILE
     crontab $CRON_FILE
+    echo "Successfully added cron job..."
+else 
+    echo "$CRON_FILE already exists..."
 fi 
