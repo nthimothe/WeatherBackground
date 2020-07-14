@@ -10,7 +10,8 @@ Change your Mac OS background based on the weather of your current city and the 
 
 
 ## Screenshots
-
+![Screenshot1](https://github.com/nthimothe/WeatherBackground/blob/master/Screenshots/clear_day.png)
+![Screenshot2](https://github.com/nthimothe/WeatherBackground/blob/master/Screenshots/clear_day_2.png)
 
 ## Acknowledgement
 
