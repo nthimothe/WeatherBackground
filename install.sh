@@ -35,7 +35,7 @@ if [ ! -f run.sh ]; then
     echo "placement=\"${loc}\"" >> run.sh
     echo "cd \$placement" >> run.sh
     echo "python3 weatherBackground.py" >> run.sh
-    echo "cd \$curr" >> run.sh
+    echo "cd \"\$curr\"" >> run.sh
     chmod 744 run.sh
     echo "Successfully wrote run.sh..."
 else 
